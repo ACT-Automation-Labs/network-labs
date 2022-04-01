@@ -4,22 +4,20 @@
 
 This Repo will act as a base for setting up Networking Labs.
 
-This script and all commands have been tested in Azure CloudShell. Please prefer it over other shells for this LAB.
+> This script and all commands have been tested in Azure CloudShell. Please prefer it over other shells for this LAB.
 
 ## Getting Started
 
 To use the scripts in your environment, clone the repository:
 
 ```bash
-$ git clone https://AKSTechProLabs@dev.azure.com/AKSTechProLabs/AKSNetworkLabSetup/_git/AKSNetworkLabSetup
-Cloning into 'AKSNetworkLabSetup'...
-Password for 'https://AKSTechProLabs@dev.azure.com':
+$ git clone https://github.com/ACT-Automation-Labs/network-labs.git
 ```
 
 ..give executable access to the scripts and start them. For example:
 
 ```bash
-$ cd AKSNetworkLabSetup/
+$ cd network-labs/
 $ chmod +x setup-lab-1.sh
 $ sh setup-lab-1.sh
 ```
@@ -35,16 +33,9 @@ Verify the resources and find out the relation between them.
 
 Maybe use VNet Topology: https://docs.microsoft.com/en-us/azure/network-watcher/view-network-topology
 
-SSH to the VMs using their Public IP.
 
-```
-User:		azureuser
-Pass:		Passw0rd@123
-```
 
-Please reset the password once you have access to the VM.
-
-Access the Clusters one by one, and apply the Deployment and Service Files:
+Connect to both the clusters one after other, using 'az aks get-credentials', and apply the Deployment and Service Files:
 
 ```bash
 ## Create Deployment
