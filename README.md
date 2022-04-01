@@ -39,10 +39,10 @@ Connect to both the clusters one after other, using 'az aks get-credentials', an
 
 ```bash
 ## Create Deployment
-$ kubectl apply -f https://raw.githubusercontent.com/rishasi/udp-client-server/main/k8s-yaml/server-deployment.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/deployment.yaml
 
 ## Create Service
-$ kubectl apply -f https://raw.githubusercontent.com/rishasi/udp-client-server/main/k8s-yaml/server-ilb-service.yaml
+$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml
 ```
 
 Verify that the resources are created
@@ -72,8 +72,12 @@ $ python3 client.py <LB_IP>
 ## Challenges
 
 1. Why is the Service not reachable on the Internal IP?
+
+   Source Code for the Server is here: https://github.com/rishasi/udp-client-server/blob/main/server/server.py
+
 2. Once the issue is resolved, initiate the traffic from VM to AKS Service, and take a packet capture on the VM and the AKS Node.
    - If there are more than 1 AKS Nodes, on which node do we take the PCAP? What are the options we have?
+   
 3. Once the Packet Capture is taken, analyze the PCAP file and draw a Request-Response Flow including as many components as possible.
 
 
