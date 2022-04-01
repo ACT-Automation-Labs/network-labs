@@ -75,3 +75,9 @@ $ python3 client.py <LB_IP>
 2. Once the issue is resolved, initiate the traffic from VM to AKS Service, and take a packet capture on the VM and the AKS Node.
    - If there are more than 1 AKS Nodes, on which node do we take the PCAP? What are the options we have?
 3. Once the Packet Capture is taken, analyze the PCAP file and draw a Request-Response Flow including as many components as possible.
+
+
+
+### Some Links to help:
+
+- Taking PCAPs for AKS: https://docs.microsoft.com/en-us/troubleshoot/azure/azure-kubernetes/capture-tcp-dump-linux-node-aks
