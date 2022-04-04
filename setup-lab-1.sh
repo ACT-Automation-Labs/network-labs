@@ -58,6 +58,7 @@ az aks create \
     --pod-cidr 10.244.0.0/16 \
     --docker-bridge-address 172.17.0.1/16 \
     --vnet-subnet-id $KUBENET_SUBNET_ID \
+    --generate-ssh-keys \
     --yes 1>/dev/null
 
 sleep 10
@@ -72,6 +73,7 @@ az aks create \
     --dns-service-ip 10.1.0.10 \
     --docker-bridge-address 172.18.0.1/16 \
     --vnet-subnet-id $CNI_SUBNET_ID \
+    --generate-ssh-keys \
     --yes 1>/dev/null
 
 sleep 10
