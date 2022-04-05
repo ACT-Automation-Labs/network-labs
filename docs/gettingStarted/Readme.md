@@ -63,9 +63,9 @@ To make changes, I am using VScode with Git extensions installed. You can use an
 
 Make changes in the files where needed. 
 
-#### commit
+#### Commit changes
 
-1. Once done, click on the git extension. 
+1. Once done, click on the source control extension. 
 
 2. Click on "+" button to `stage` your changes. 
 
@@ -73,7 +73,7 @@ Make changes in the files where needed.
 
 3. Add commit message relevant to your changes along with the WI number in this format - AB#<WI-number>
 
-4. click on ✔️ to commit your changes. 
+4. click on ✔️ to `commit` your changes. 
 
    ![gitCommit](../../../Document/gitCommit.png)
 
@@ -85,10 +85,15 @@ If you have created the branch on local and publishing the branch for the first 
 
 ![PushBranch](../../../Document/PushBranch.png)
 
-It will ask you to authenticate with your github credentials. Once succesful, you will be able to see your branch on Github 
+It will ask you to authenticate with your github credentials. Once successful, you will be able to see your branch on Github.
 
 ![branchOnGithub](../../../Document/branchOnGithub.png)
 
-If you have any other changes yet to be made, you can make in your files in IDE, and 
+If you have any other changes yet to be made, you can make in your files in IDE, and follow the same steps, `stage` , `commit`  (As mentioned above) and push your changes to your respective branch. 
+
+To push changes , please follow below - 
+
+ 
 
 #### Create a Pull Request
+
