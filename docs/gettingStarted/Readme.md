@@ -81,4 +81,14 @@ Make changes in the files where needed.
 
 #### Push to Github as a new branch
 
+If you have created the branch on local and publishing the branch for the first time, you will get option of `Publish Branch` as below -
+
+![PushBranch](../../../Document/PushBranch.png)
+
+It will ask you to authenticate with your github credentials. Once succesful, you will be able to see your branch on Github 
+
+![branchOnGithub](../../../Document/branchOnGithub.png)
+
+If you have any other changes yet to be made, you can make in your files in IDE, and 
+
 #### Create a Pull Request
