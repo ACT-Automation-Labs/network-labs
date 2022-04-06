@@ -20,7 +20,7 @@ Run below command in git bash.
 $ git clone https://github.com/ACT-Automation-Labs/network-labs.git
 ```
 
-![gitClone](.\images\gitClone.png)
+![gitClone](./images/gitClone.png)
 
 ```shell
 $ git clone https://github.com/ACT-Automation-Labs/network-labs.git
@@ -58,7 +58,7 @@ Once you are into git repository (also called git `local repository`), you will 
 
 To verify if the branch is created and switched to or not, check the branch as below - 
 
-![gitBranchCheckout](.\images\gitBranchCheckout.png)
+![gitBranchCheckout](./images/gitBranchCheckout.png)
 
 ### Make changes
 
@@ -76,13 +76,13 @@ Make changes in the files where needed.
 
 2. Click on "+" button to `stage` your changes. 
 
-   ![gitAdd](.\images\gitAdd.png)
+   ![gitAdd](./images/gitAdd.png)
 
 3. Add commit message relevant to your changes along with the WI number in this format - `AB#<WI-number>`. Appending the commit messages with AB# is important to get the commits tracked in your Azure DevOps Work Item.
 
 4. Click on ✔️ to `commit` your changes. 
 
-   ![gitCommit](.\images\gitCommit.png)
+   ![gitCommit](./images/gitCommit.png)
 
    ​
 
@@ -90,21 +90,21 @@ Make changes in the files where needed.
 
 If you have created the branch on local and publishing the branch for the first time, you will get option of `Publish Branch` as below -
 
-![PushBranch](.\images\PushBranch.png)
+![PushBranch](./images/PushBranch.png)
 
 It will ask you to authenticate with your github credentials. Once successful, you will be able to see your branch on Github.
 
-![branchOnGithub](.\images\branchOnGithub.png)
+![branchOnGithub](./images/branchOnGithub.png)
 
 If you have any other changes yet to be made, you can make changes in your files, and follow the same steps, `stage` , `commit`  (As mentioned above) and push your changes to your respective branch. 
 
 To push changes , please follow below - 
 
-![SyncChanges](.\images\SyncChanges.png)
+![SyncChanges](./images/SyncChanges.png)
 
 
 
-​                    ![dialogBox](.\images\dialogBox.png)   
+​                    ![dialogBox](./images/dialogBox.png)   
 
 ### Create a Pull Request
 
@@ -112,7 +112,7 @@ Once your changes are successfully tested and pushed and ready to be merged in t
 
 1. Click on Compare & Pull request
 
-![CompareAndPull](.\images\CompareAndPull.png)
+![CompareAndPull](./images/CompareAndPull.png)
 
 2. Create a pull request as below - 
 
@@ -121,7 +121,7 @@ Once your changes are successfully tested and pushed and ready to be merged in t
    3. Add reviewer to request a review.
    4. Click on create pull request.
 
-   ![pullRequestCreation](.\images\pullRequestCreation.png) 
+   ![pullRequestCreation](./images/pullRequestCreation.png) 
 
 
 ### Important Note  
