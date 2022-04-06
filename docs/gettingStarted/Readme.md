@@ -1,4 +1,4 @@
-## **How to contribute to ACT-Automation-Labs on Github **
+## How to contribute to ACT-Automation-Labs on Github
 
 [TOC]
 
