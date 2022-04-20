@@ -55,7 +55,6 @@ az vm create -n client-vm -g $RESOURCE_GROUP \
     --admin-username azureuser \
     --admin-password Passw0rd@123 \
     --subnet $SUBNET_ID \
-    --vnet-name $VNET_ID \
     --public-ip-sku Standard
 
 sleep 10
@@ -65,4 +64,4 @@ az aks get-credentials -n aks-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-e
 
 ## Create the Deployment and Service
 kubectl create -f https://raw.githubusercontent.com/rishasi/udp-client-server/main/k8s-yaml/server-deployment.yaml 1>/dev/null
-kubectl create -f https://github.com/rishasi/udp-client-server/blob/main/k8s-yaml/server-ilb-service.yaml 1>/dev/null
+kubectl create -f https://raw.githubusercontent.com/rishasi/udp-client-server/main/k8s-yaml/server-ilb-service.yaml 1>/dev/null
