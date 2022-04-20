@@ -78,8 +78,28 @@ az aks create \
 
 sleep 10
 
-## Create NSG for 2 VMs
+## Get the Kubenet AKS Credentials
+az aks get-credentials -n kubenet-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-existing
 
+## Create Deployment
+$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/deployment.yaml 1>/dev/null
+
+## Create Service
+$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml 1>/dev/null
+
+
+## Get the CNI AKS Credentials
+az aks get-credentials -n cni-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-existing
+
+## Create Deployment
+$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/deployment.yaml 1>/dev/null
+
+## Create Service
+$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml 1>/dev/null
+
+
+
+## Create NSG for 2 VMs
 echo "\n--> Creating NSG for Custom VMs"
 
 az network nsg create \
