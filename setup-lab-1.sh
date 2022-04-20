@@ -87,6 +87,7 @@ $ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network
 ## Create Service
 $ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml 1>/dev/null
 
+sleep 10
 
 ## Get the CNI AKS Credentials
 az aks get-credentials -n cni-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-existing
