@@ -29,7 +29,7 @@ az network vnet create -g $RESOURCE_GROUP --location $LOCATION \
 ## Store the Values
 
 VNET_ID=$(az network vnet show -g $RESOURCE_GROUP --name custom-vnet-${APPEND} --query id -o tsv)
-SUBNET_ID=$(az network vnet subnet show -g $RESOURCE_GROUP --vnet-name custom-vnet-${APPEND} --name kubenet-custom-subnet-${APPEND} --query id -o tsv)
+SUBNET_ID=$(az network vnet subnet show -g $RESOURCE_GROUP --vnet-name custom-vnet-${APPEND} --name custom-subnet-${APPEND} --query id -o tsv)
 
 
 ## Create AKS Cluster
@@ -64,5 +64,5 @@ sleep 10
 az aks get-credentials -n aks-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-existing
 
 ## Create the Deployment and Service
-kubectl create -f https://raw.githubusercontent.com/rishasi/udp-client-server/main/k8s-yaml/server-deployment.yaml
-kubectl create -f https://github.com/rishasi/udp-client-server/blob/main/k8s-yaml/server-ilb-service.yaml
+kubectl create -f https://raw.githubusercontent.com/rishasi/udp-client-server/main/k8s-yaml/server-deployment.yaml 1>/dev/null
+kubectl create -f https://github.com/rishasi/udp-client-server/blob/main/k8s-yaml/server-ilb-service.yaml 1>/dev/null
