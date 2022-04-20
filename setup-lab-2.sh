@@ -29,7 +29,7 @@ az network vnet create -g $RESOURCE_GROUP --location $LOCATION \
 ## Store the Values
 
 VNET_ID=$(az network vnet show -g $RESOURCE_GROUP --name custom-vnet-${APPEND} --query id -o tsv)
-SUBNET_ID=$(az network vnet subnet show -g $RESOURCE_GROUP --vnet-name custom-vnet-${APPEND} --name kubenet-custom-subnet-${APPEND} --query id -o ts
+SUBNET_ID=$(az network vnet subnet show -g $RESOURCE_GROUP --vnet-name custom-vnet-${APPEND} --name kubenet-custom-subnet-${APPEND} --query id -o tsv)
 
 
 ## Create AKS Cluster
