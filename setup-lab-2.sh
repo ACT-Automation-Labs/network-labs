@@ -63,6 +63,6 @@ sleep 10
 ## Get the AKS Credentials
 az aks get-credentials -n aks-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-existing
 
-## Create the Service
+## Create the Deployment and Service
 kubectl create -f https://raw.githubusercontent.com/rishasi/udp-client-server/main/k8s-yaml/server-deployment.yaml
 kubectl create -f https://github.com/rishasi/udp-client-server/blob/main/k8s-yaml/server-ilb-service.yaml
