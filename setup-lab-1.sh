@@ -82,10 +82,10 @@ sleep 10
 az aks get-credentials -n kubenet-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-existing
 
 ## Create Deployment
-$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/deployment.yaml 1>/dev/null
+kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/deployment.yaml 1>/dev/null
 
 ## Create Service
-$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml 1>/dev/null
+kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml 1>/dev/null
 
 sleep 10
 
@@ -93,10 +93,10 @@ sleep 10
 az aks get-credentials -n cni-cluster-${APPEND} -g $RESOURCE_GROUP --overwrite-existing
 
 ## Create Deployment
-$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/deployment.yaml 1>/dev/null
+kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/deployment.yaml 1>/dev/null
 
 ## Create Service
-$ kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml 1>/dev/null
+kubectl apply -f https://raw.githubusercontent.com/ACT-Automation-Labs/network-labs/main/k8s-yaml/service.yaml 1>/dev/null
 
 
 
